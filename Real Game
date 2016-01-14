@@ -1,0 +1,65 @@
+/*
+PROGRAM NAME: Games
+PROGRAM PURPOSE: To have fun
+DATE WRITTEN: 1-12-16
+PROGRAMMER: Drew Deskin
+*/
+
+#include <iostream>
+int altRoute();
+using namespace std;
+char answerM;
+char answer1;
+char answer2;
+char answer3;
+
+int main()
+{	
+	cout << "You woke up in a car. After exiting you realize that the car is totalled and you are in a desert. Do you walk right or left? (Please answer R or L): ";
+		//Level 1
+		cin >> answer1;
+		if (answer1 == 'L')
+		{
+			altRoute();
+		}
+	
+		//Level 1
+		if (answer1 == 'R')
+		{
+			
+			cout << "The chosen path takes you deeper in to the desert. You begin to think you went the wrong way. Do you backtrack or continue? (Please answer B or C): ";
+			//Level 2
+			cin >> answer2;
+			if (answer2 =='C')
+			{
+				cout << "You come across a theater, it has a sign that reads: Welcome to the Monkey House! Do you wish to continue? (Please answer Y or N): ";
+			}
+			//Level 2
+			else if (answer2 = 'B')
+			{
+				cout << "As you are returning, a black jeep with tinted windows pulls over. A large man with sleeves of tattoos offers you a ride. Do you accept? (Please answer Y or N): ";
+			}
+			
+		}
+	system("pause");
+	return 0;
+}
+int altRoute()
+{
+		cout << "Congratulations! You find a payphone but only have enough money to call one person. Do you want to call mom or police? (Please answer M or P): ";
+		//Level 2
+		cin >> answer2;
+		if (answer2 == 'M')
+		{
+			cout << "Your mother brings up your grades. Knowing you have a F you promptly hang up ";
+		}
+		//Level 2
+		if (answer2 == 'P')
+		{
+			cout << "The police arrive yet, they seem off...after questioning you for several moments they decide to take you back to the station. After hours of driving you see that the car is driving on a dirt road seemingly deeper into the desert. When exiting to use the bathroom you see a chance to escape. Do you stay or leave? (Please answer S or L) ";
+			//Level 3
+			cin >> answer3;
+		}
+	
+	return 0;
+}
